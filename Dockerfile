@@ -6,7 +6,7 @@ LABEL "com.github.actions.icon"="server"
 LABEL "com.github.actions.color"="blue"
 
 LABEL "repository"="https://github.com/robatwave/github-action-eksctl"
-LABEL "homepage"="https://github.com/robatwave/github-action-eksctl
+LABEL "homepage"="https://github.com/robatwave/github-action-eksctl"
 LABEL "maintainer"="Rob van Oostrum <rvanoostrum@waveapps.com>"
 
 RUN apk add --update --no-cache --virtual .build-deps curl openssl \
