@@ -14,7 +14,7 @@ RUN apk add --update --no-cache --virtual .build-deps curl openssl \
     && chmod +x /usr/local/bin/aws-iam-authenticator \
     && curl -s -o /tmp/aws-iam-authenticator.sha256 https://amazon-eks.s3-us-west-2.amazonaws.com/1.13.7/2019-06-11/bin/linux/amd64/aws-iam-authenticator.sha256 \
     && openssl sha1 -sha256 /usr/local/bin/aws-iam-authenticator \
-    && curl -s --location "https://github.com/weaveworks/eksctl/releases/download/latest_release/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp \
+    && curl -s --location "https://github.com/weaveworks/eksctl/releases/download/0.63.0/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp \
     && mv /tmp/eksctl /usr/local/bin \
     && apk del .build-deps
 
